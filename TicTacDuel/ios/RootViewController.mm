@@ -2,7 +2,7 @@
 //  TicTacDuelAppController.h
 //  TicTacDuel
 //
-//  Created by CGarcia on 7/23/13.
+//  Created by CGarcia on 7/27/13.
 //  Copyright __MyCompanyName__ 2013. All rights reserved.
 //
 
@@ -37,13 +37,13 @@
 // Override to allow orientations other than the default portrait orientation.
 // This method is deprecated on ios6
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return UIInterfaceOrientationIsLandscape( interfaceOrientation );
+    return UIInterfaceOrientationIsPortrait( interfaceOrientation );
 }
 
 // For ios6, use supportedInterfaceOrientations & shouldAutorotate instead
 - (NSUInteger) supportedInterfaceOrientations{
 #ifdef __IPHONE_6_0
-    return UIInterfaceOrientationMaskLandscape;
+    return UIInterfaceOrientationMaskPortrait;
 #endif
 }
 
